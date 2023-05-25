@@ -1,6 +1,6 @@
 from types import SimpleNamespace
 from src.utils.keyboard import create_keyboard
-import emoji
+
 
 
 

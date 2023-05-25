@@ -22,11 +22,11 @@ class Bot:
     def handlers(self):
         @self.bot.message_handler(is_admin=True)
         def admin_of_group(message):
-            self.bot.send_message(message.chat.id, "you are admin of this group")
+            self.send_message(message.chat.id, "you are admin of this group")
             
         @self.bot.message_handler(func=lambda _: True)
         def echo(message):
-            self.bot.send_message(
+            self.send_message(
                 message.chat.id, message.text,
                 reply_markup=keyboards.main
             )   
